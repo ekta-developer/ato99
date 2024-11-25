@@ -1,0 +1,113 @@
+[
+  {
+    "brand": "Zara",
+    "category": "clothes",
+    "countInStock": 10,
+    "description": "Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing. Sed lectus.",
+    "imageUrl": [
+      { "img": "https://example.com/image1.jpg", "alt": "Backpack Front" },
+      { "img": "https://example.com/image2.jpg", "alt": "Backpack Side" }
+    ],
+    "name": "Backpack",
+    "numofReviews": "12",
+    "offer_price": 1500,
+    "price": 3000,
+    "rating": "4.5",
+    "slug": "backpack",
+    "status": "Sale",
+    "_id": "1"
+  },
+  {
+    "brand": "Nike",
+    "category": "shoes",
+    "countInStock": 25,
+    "description": "Comfortable running shoes for all-day wear. Made with durable materials to last longer.",
+    "imageUrl": [
+      { "img": "https://example.com/nike1.jpg", "alt": "Running Shoes Front" },
+      { "img": "https://example.com/nike2.jpg", "alt": "Running Shoes Side" }
+    ],
+    "name": "Running Shoes",
+    "numofReviews": "45",
+    "offer_price": 4000,
+    "price": 6000,
+    "rating": "4.7",
+    "slug": "running-shoes",
+    "status": "New",
+    "_id": "2"
+  },
+  {
+    "brand": "Adidas",
+    "category": "accessories",
+    "countInStock": 15,
+    "description": "A sleek sports watch perfect for athletes and everyday wear. Water-resistant and stylish.",
+    "imageUrl": [
+      { "img": "https://example.com/adidas1.jpg", "alt": "Sports Watch Front" },
+      { "img": "https://example.com/adidas2.jpg", "alt": "Sports Watch Side" }
+    ],
+    "name": "Sports Watch",
+    "numofReviews": "28",
+    "offer_price": 8000,
+    "price": 10000,
+    "rating": "4.2",
+    "slug": "sports-watch",
+    "status": "Top",
+    "_id": "3"
+  },
+  {
+    "brand": "H&M",
+    "category": "clothes",
+    "countInStock": 50,
+    "description": "A comfortable and stylish cotton t-shirt perfect for casual outings and daily wear.",
+    "imageUrl": [
+      { "img": "https://example.com/hm1.jpg", "alt": "T-Shirt Front" },
+      { "img": "https://example.com/hm2.jpg", "alt": "T-Shirt Back" }
+    ],
+    "name": "Cotton T-Shirt",
+    "numofReviews": "67",
+    "offer_price": 700,
+    "price": 1000,
+    "rating": "4.8",
+    "slug": "cotton-t-shirt",
+    "status": "Sale",
+    "_id": "4"
+  },
+  {
+    "brand": "Puma",
+    "category": "shoes",
+    "countInStock": 30,
+    "description": "High-performance football boots designed for precision and comfort on the field.",
+    "imageUrl": [
+      { "img": "https://example.com/puma1.jpg", "alt": "Football Boots Front" },
+      { "img": "https://example.com/puma2.jpg", "alt": "Football Boots Side" }
+    ],
+    "name": "Football Boots",
+    "numofReviews": "33",
+    "offer_price": 5000,
+    "price": 7000,
+    "rating": "4.3",
+    "slug": "football-boots",
+    "status": "Top",
+    "_id": "5"
+  },
+  {
+    "brand": "Uniqlo",
+    "category": "clothes",
+    "countInStock": 20,
+    "description": "Stylish winter jacket made from premium materials to keep you warm and comfortable.",
+    "imageUrl": [
+      {
+        "img": "https://example.com/uniqlo1.jpg",
+        "alt": "Winter Jacket Front"
+      },
+      { "img": "https://example.com/uniqlo2.jpg", "alt": "Winter Jacket Back" }
+    ],
+    "name": "Winter Jacket",
+    "numofReviews": "18",
+    "offer_price": 4500,
+    "price": 6000,
+    "rating": "4.6",
+    "slug": "winter-jacket",
+    "status": "New",
+    "_id": "6"
+  }
+]

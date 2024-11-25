@@ -1,5 +1,6 @@
 import React from "react";
-
+import img from "../../assests/IMAGES/img/2934.jpg"
+import "../../assests/CSS/css/bootstrap.min.css"
 const About = () => {
   return (
     <>
@@ -56,7 +57,7 @@ const About = () => {
                 <img
                   className="img-fluid rounded"
                   data-wow-delay="0.1s"
-                  src="img/2934.jpg"
+                  src={img}
                 />
               </div>
               <div className="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
