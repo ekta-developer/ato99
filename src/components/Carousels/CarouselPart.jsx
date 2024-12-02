@@ -17,13 +17,14 @@ const CarouselPart = () => {
     arrows: false, // Disable default arrows, we'll use custom controls
   };
 
-  const container={
-    "marginTop":"18.5rem",
-
-  }
-
+  const container = {
+    marginTop: "18.5rem",
+  };
+  const carousel = {
+    marginTop: "7%",
+  };
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" style={carousel}>
       <Slider {...settings} ref={sliderRef}>
         {/* Slide 1 */}
         <div className="slide slide1">
@@ -34,10 +35,16 @@ const CarouselPart = () => {
                   Discover your new favorite outfit.
                 </h6>
                 <h1 className="display-3 my-4">
-                  We craft digital<br />experiences
+                  We craft digital
+                  <br />
+                  experiences
                 </h1>
-                <a href="#" className="btn btn-brand">Get Started</a>
-                <a href="#" className="btn btn-outline-light ms-3">Our work</a>
+                <a href="#" className="btn btn-brand">
+                  Get Started
+                </a>
+                <a href="#" className="btn btn-outline-light ms-3">
+                  Our work
+                </a>
               </div>
             </div>
           </div>
@@ -52,10 +59,15 @@ const CarouselPart = () => {
                   Dress for the life you deserve.
                 </h6>
                 <h1 className="display-3 my-4">
-                  Design Driven For <br />Professionals
+                  Design Driven For <br />
+                  Professionals
                 </h1>
-                <a href="#" className="btn btn-brand">Get Started</a>
-                <a href="#" className="btn btn-outline-light ms-3">Our work</a>
+                <a href="#" className="btn btn-brand">
+                  Get Started
+                </a>
+                <a href="#" className="btn btn-outline-light ms-3">
+                  Our work
+                </a>
               </div>
             </div>
           </div>
@@ -68,16 +80,16 @@ const CarouselPart = () => {
         type="button"
         onClick={() => sliderRef.current.slickPrev()} // Navigate to previous slide
       >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="sr-only">Previous</span>
+        {/* <span className="carousel-control-prev-icon" aria-hidden="true"></span> */}
+        {/* <span className="sr-only">Previous</span> */}
       </button>
       <button
         className="carousel-control-next"
         type="button"
         onClick={() => sliderRef.current.slickNext()} // Navigate to next slide
       >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="sr-only">Next</span>
+        {/* <span className="carousel-control-next-icon" aria-hidden="true"></span> */}
+        {/* <span className="sr-only">Next</span> */}
       </button>
     </div>
   );

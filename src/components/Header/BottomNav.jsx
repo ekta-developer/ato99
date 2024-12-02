@@ -1,8 +1,10 @@
 import React from "react";
-import "../../assests/CSS/css/bootstrap.min.css"
+import "../../assests/CSS/css/bootstrap.min.css";
 const BottomNav = () => (
-  <div className="container">
-    <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <nav
+    className="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    style={{ width: "100%" }}
+  >
     <div className="container">
       <a className="navbar-brand" href="#">
         tA99Shop<span className="dot">.</span>com
@@ -26,7 +28,7 @@ const BottomNav = () => (
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#about">
+            <a className="nav-link" href="">
               About
             </a>
           </li>
@@ -57,7 +59,6 @@ const BottomNav = () => (
       </div>
     </div>
   </nav>
-  </div>
 );
 
 export default BottomNav;

@@ -6,12 +6,14 @@ import "../src/assests/CSS/css/style.css"
 import About from "./components/Section/About";
 import Footer from "./components/Footer/Footer";
 import CardCarousel from "./components/Carousels/CardCarousel";
+import Contact from "./components/Section/Contact";
 function App() {
   return (
     <>
       <Header />
       <CarouselPart/>
       <About/>
+      <Contact/>
       <CardCarousel/>
       <Footer/>
     </>

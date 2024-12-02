@@ -1,3 +1,4 @@
+
 [
   {
     "brand": "Zara",
@@ -9,7 +10,8 @@
       { "img": "https://example.com/image2.jpg", "alt": "Backpack Side" }
     ],
     "name": "Backpack",
-    "numofReviews": "12",
+    "averageRating": "4",
+    "numofReviews": "25",
     "offer_price": 1500,
     "price": 3000,
     "rating": "4.5",
@@ -28,6 +30,7 @@
     ],
     "name": "Running Shoes",
     "numofReviews": "45",
+    "averageRating": "4",
     "offer_price": 4000,
     "price": 6000,
     "rating": "4.7",
@@ -46,6 +49,7 @@
     ],
     "name": "Sports Watch",
     "numofReviews": "28",
+    "averageRating": "2",
     "offer_price": 8000,
     "price": 10000,
     "rating": "4.2",
@@ -64,6 +68,7 @@
     ],
     "name": "Cotton T-Shirt",
     "numofReviews": "67",
+    "averageRating": "5",
     "offer_price": 700,
     "price": 1000,
     "rating": "4.8",
@@ -82,6 +87,7 @@
     ],
     "name": "Football Boots",
     "numofReviews": "33",
+    "averageRating": "3",
     "offer_price": 5000,
     "price": 7000,
     "rating": "4.3",
@@ -103,6 +109,7 @@
     ],
     "name": "Winter Jacket",
     "numofReviews": "18",
+    "averageRating": "2",
     "offer_price": 4500,
     "price": 6000,
     "rating": "4.6",
