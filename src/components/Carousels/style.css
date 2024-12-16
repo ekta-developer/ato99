@@ -15,3 +15,20 @@
   background-color: #ff7a45; /* Light orange background */
   color: #fff; /* White text */
 }
+
+.btn-view{
+justify-content: center;
+align-content: center;
+}
+
+.btn-view:hover{
+  background-color:black; /* Light orange background */
+  color: #fff; /* White text */
+}
+.view-btn {
+  text-align: center; /* Centers inline and inline-block elements */
+}
+
+.btn-view {
+  display: inline-block; /* Ensures button respects text alignment */
+}

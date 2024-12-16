@@ -1,13 +1,14 @@
 import React from "react";
 import "../../assests/CSS/css/bootstrap.min.css";
+import img from "../../assests/logo.png"
 const BottomNav = () => (
   <nav
     className="navbar navbar-expand-lg navbar-light bg-white sticky-top"
     style={{ width: "100%" }}
   >
     <div className="container">
-      <a className="navbar-brand" href="#">
-        tA99Shop<span className="dot">.</span>com
+      <a className="navbar-brand" href="">
+        <img src={img} style={{width:"20px",height:"20px"}}></img>
       </a>
       <button
         className="navbar-toggler"

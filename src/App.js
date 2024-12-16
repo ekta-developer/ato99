@@ -7,14 +7,18 @@ import About from "./components/Section/About";
 import Footer from "./components/Footer/Footer";
 import CardCarousel from "./components/Carousels/CardCarousel";
 import Contact from "./components/Section/Contact";
+import WhatsApp from "./components/Social Connect/WhatsApp"
+import Contact2 from "./components/Section/Contact2";
 function App() {
   return (
     <>
       <Header />
       <CarouselPart/>
       <About/>
-      <Contact/>
+      {/* <Contact/> */}
       <CardCarousel/>
+      <Contact2/>
+      <WhatsApp/>
       <Footer/>
     </>
   );

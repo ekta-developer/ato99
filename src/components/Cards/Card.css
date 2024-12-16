@@ -1,0 +1,50 @@
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-main-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-sub-heading {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .card-content {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .how-to-get-btn {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .how-to-get-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .phones-list p, .work-schedule p {
+    margin: 8px 0;
+  }
+  
+  .work-schedule span {
+    font-weight: bold;
+  }
+  

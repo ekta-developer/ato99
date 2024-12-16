@@ -16,7 +16,7 @@ const textStyle = {
   textTransform: "uppercase",
   color: "#000",
   margin: "0",
-  marginTop:"2px",
+  marginTop: "2px",
   padding: "0",
 };
 
@@ -198,6 +198,9 @@ const CardCarousel = () => {
             </div>
           ))}
         </Slider>
+      </div>
+      <div className="view-btn">
+        <button className="btn btn-outline-secondary">View All</button>
       </div>
     </>
   );
