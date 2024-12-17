@@ -1,0 +1,75 @@
+:root {
+    --brand: #ff4d29;
+    --dark: #092032;
+    --body: #516171;
+    --border: rgba(0, 0, 0, 0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    --primary: #f35b15;
+    --secondary: #525368;
+    --light: #e8f5e9;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    color: var(--body);
+    background-color: var(--light);
+  }
+  
+  .banner {
+    background: 
+      linear-gradient(135deg, rgba(232, 245, 233, 0.8), rgba(52, 142, 56, 0.8)),
+      url("../assests/IMAGES/images/avatar-01.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--dark);
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .banner h2 {
+    font-weight: 700;
+  }
+  
+  .banner .btn {
+    background-color: var(--brand);
+    color: #fff;
+    border: none;
+  }
+  
+  .banner .btn:hover {
+    background-color: var(--primary);
+  }
+  
+  
+  .banner .btn:hover {
+    background-color: var(--primary);
+  }
+  
+  .card {
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    color: var(--dark);
+  }
+  
+  .card-text {
+    color: var(--body);
+  }
+  
+  .card-footer .btn {
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .card-footer .btn:hover {
+    background-color: var(--primary);
+    color: #fff;
+  }
+  

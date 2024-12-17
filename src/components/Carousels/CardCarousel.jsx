@@ -61,21 +61,22 @@ const CardCarousel = () => {
 
   return (
     <>
-      {/* <hr/> */}
-      <h1 className="display-5 text-center mb-5">Our Collection</h1>
-      <div className="slider-container my-4">
-        <Slider {...sliderSettings}>
-          {products.map((product) => (
-            <div key={product._id} className="px-3">
-              <div
-                className="card h-100"
-                style={{ border: "none", boxShadow: "none" }}
-              >
+      <div className="container">
+        {/* <hr/> */}
+        <h1 className="display-5 text-center mb-5">Our Collection</h1>
+        <div className="slider-container my-4">
+          <Slider {...sliderSettings}>
+            {products.map((product) => (
+              <div key={product._id} className="px-3">
                 <div
-                  className="card-header bg-transparent text-center"
-                  style={{ border: "none" }}
+                  className="card h-100"
+                  style={{ border: "none", boxShadow: "none" }}
                 >
-                  {/* <a
+                  <div
+                    className="card-header bg-transparent text-center"
+                    style={{ border: "none" }}
+                  >
+                    {/* <a
                     href={`/product-detail/${product.slug}`}
                     className="text-decoration-none"
                   >
@@ -93,114 +94,117 @@ const CardCarousel = () => {
                       </span>
                     )}
                   </a> */}
-                </div>
-                <div
-                  className="card-body text-center"
-                  style={{ border: "none" }}
-                >
-                  <a href={`/product-detail/${product.slug}`}>
-                    <div className="d-flex justify-content-center position-relative">
-                      {/* Main Image */}
-                      <img
-                        src={img}
-                        alt={`${product.name} - Main`}
-                        className="img-fluid product-image"
-                        style={{
-                          maxHeight: "300px", // Increased by 25%
-                          objectFit: "cover",
-                          transition: "opacity 0.3s ease-in-out",
-                        }}
-                      />
-                      {/* Hover Image */}
-                      <img
-                        src={img2}
-                        alt={`${product.name} - Hover`}
-                        className="img-fluid product-image-hover position-absolute"
-                        style={{
-                          maxHeight: "300px", // Increased by 25%
-                          objectFit: "cover",
-                          top: 0,
-                          left: 0,
-                          opacity: 0,
-                          transition: "opacity 0.3s ease-in-out",
-                        }}
-                        onMouseOver={(e) => (e.target.style.opacity = 1)}
-                        onMouseOut={(e) => (e.target.style.opacity = 0)}
-                      />
-                    </div>
-                    <button
-                      className="position-absolute top-0 end-0 p-2 m-2 bg-white border-0 rounded-circle shadow"
-                      // style={{
-                      //   width: "40px",
-                      //   height: "40px",
+                  </div>
+                  <div
+                    className="card-body text-center"
+                    style={{ border: "none" }}
+                  >
+                    <a href={`/product-detail/${product.slug}`}>
+                      <div className="d-flex justify-content-center position-relative">
+                        {/* Main Image */}
+                        <img
+                          src={img}
+                          alt={`${product.name} - Main`}
+                          className="img-fluid product-image"
+                          style={{
+                            maxHeight: "300px", // Increased by 25%
+                            objectFit: "cover",
+                            transition: "opacity 0.3s ease-in-out",
+                          }}
+                        />
+                        {/* Hover Image */}
+                        <img
+                          src={img2}
+                          alt={`${product.name} - Hover`}
+                          className="img-fluid product-image-hover position-absolute"
+                          style={{
+                            maxHeight: "300px", // Increased by 25%
+                            objectFit: "cover",
+                            top: 0,
+                            left: 0,
+                            opacity: 0,
+                            transition: "opacity 0.3s ease-in-out",
+                          }}
+                          onMouseOver={(e) => (e.target.style.opacity = 1)}
+                          onMouseOut={(e) => (e.target.style.opacity = 0)}
+                        />
+                      </div>
+                      <button
+                        className="position-absolute top-0 end-0 p-2 m-2 bg-white border-0 rounded-circle shadow"
+                        // style={{
+                        //   width: "40px",
+                        //   height: "40px",
 
-                      //   display: "flex",
-                      //   alignItems: "center",
-                      //   justifyContent: "center",
-                      // }}
+                        //   display: "flex",
+                        //   alignItems: "center",
+                        //   justifyContent: "center",
+                        // }}
+                        onClick={() =>
+                          console.log("Add to Wishlist clicked:", product)
+                        }
+                      >
+                        <CiHeart style={{ fontSize: "30px" }} />
+                      </button>
+                    </a>
+
+                    {/* Rating Section with Stars */}
+                    <div className="ratings-container mb-3">
+                      <div className="d-flex justify-content-center">
+                        <span>
+                          <p style={textStyle}> {product.name}</p>
+                          <div style={ratingContainerStyle}>
+                            <Rating
+                              rating={product.averageRating}
+                              numofReviews={product.numofReviews}
+                            />
+                          </div>
+                        </span>
+                      </div>
+                      <p
+                        className="card-text text-center"
+                        style={{ marginBottom: "10px" }}
+                      >
+                        <span
+                          style={{
+                            color: "#ff4d29",
+                            fontSize: "20px",
+                            fontWeight: "700",
+                            marginRight: "10px",
+                          }}
+                        >
+                          ₹{product.offer_price}
+                        </span>
+                        <span
+                          className="text-muted text-decoration-line-through"
+                          style={{ fontSize: "18px", fontWeight: "400" }}
+                        >
+                          ₹{product.price}
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    className="card-footer text-center bg-white"
+                    style={{ border: "none" }}
+                  >
+                    <button
+                      className="btn2"
                       onClick={() =>
-                        console.log("Add to Wishlist clicked:", product)
+                        console.log("Add to Cart clicked:", product)
                       }
                     >
-                      <CiHeart style={{ fontSize: "30px" }} />
+                      Add to Cart
                     </button>
-                  </a>
-
-                  {/* Rating Section with Stars */}
-                  <div className="ratings-container mb-3">
-                    <div className="d-flex justify-content-center">
-                      <span>
-                        <p style={textStyle}> {product.name}</p>
-                        <div style={ratingContainerStyle}>
-                          <Rating
-                            rating={product.averageRating}
-                            numofReviews={product.numofReviews}
-                          />
-                        </div>
-                      </span>
-                    </div>
-                    <p
-                      className="card-text text-center"
-                      style={{ marginBottom: "10px" }}
-                    >
-                      <span
-                        style={{
-                          color: "#ff4d29",
-                          fontSize: "20px",
-                          fontWeight: "700",
-                          marginRight: "10px",
-                        }}
-                      >
-                        ₹{product.offer_price}
-                      </span>
-                      <span
-                        className="text-muted text-decoration-line-through"
-                        style={{ fontSize: "18px", fontWeight: "400" }}
-                      >
-                        ₹{product.price}
-                      </span>
-                    </p>
                   </div>
                 </div>
-
-                <div
-                  className="card-footer text-center bg-white"
-                  style={{ border: "none" }}
-                >
-                  <button
-                    className="btn2"
-                    onClick={() => console.log("Add to Cart clicked:", product)}
-                  >
-                    Add to Cart
-                  </button>
-                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
-      <div className="view-btn">
-        <button className="btn btn-outline-secondary">View All</button>
+            ))}
+          </Slider>
+        </div>
+        <div className="view-btn">
+          <button className="btn btn-outline-secondary">View All</button>
+        </div>
       </div>
     </>
   );
