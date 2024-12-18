@@ -11,7 +11,11 @@ const BottomNav = () => {
     >
       <div className="container">
         <a className="navbar-brand" href="">
-          <img src={img} style={{ width: "20px", height: "20px" }}></img>
+          <img
+            src={img}
+            style={{ width: "20px", height: "20px" }}
+            alt="Brand"
+          ></img>
         </a>
         <button
           className="navbar-toggler"
