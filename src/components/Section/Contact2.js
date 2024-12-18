@@ -1,23 +1,25 @@
 import React from "react";
-import "./Contact2.css"; // To layout multiple cards like the UI in the image
+import "./Contact2.css"; // Ensure this file contains responsive styles
 import "../../assests/CSS/css/bootstrap.min.css";
 import Card from "../Cards/Card";
 
 function Contact2() {
   return (
-    <div className="container-xxl py-5">
+    <div className="container-xxl py-5" style={{ marginTop: "100px" }}>
       <div className="container">
         <h1 className="display-5 mb-4 text-center">Contact Us</h1>
-        <div className="row g-5 align-items-center">
-          <div className="app-container">
-            {/* Address Card */}
+        <div className="row g-4">
+          {/* Address Card */}
+          <div className="col-md-4 col-sm-6">
             <Card
               mainHeading="Address"
               subHeading="123112, Moscow, Presnensky dist., Klimashkina st., 16"
               content={<button className="how-to-get-btn">How to get</button>}
             />
+          </div>
 
-            {/* Phones Card */}
+          {/* Phones Card */}
+          <div className="col-md-4 col-sm-6">
             <Card
               mainHeading="Phones"
               subHeading=""
@@ -36,8 +38,10 @@ function Contact2() {
                 </div>
               }
             />
+          </div>
 
-            {/* Work Schedule Card */}
+          {/* Work Schedule Card */}
+          <div className="col-md-4 col-sm-12">
             <Card
               mainHeading="Work Schedule"
               subHeading=""

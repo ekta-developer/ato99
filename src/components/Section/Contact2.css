@@ -1,9 +1,29 @@
 .app-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    /* background-color:white; */
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  /* background-color:white; */
+  padding: 20px;
+}
+/* Custom styles for Contact2 */
+
+/* Adjust spacing and layout for smaller screens */
+@media (max-width: 768px) {
+  .phones-list p,
+  .work-schedule p {
+    font-size: 14px; /* Smaller font for compact display */
+    line-height: 1.5;
   }
-  
+
+  .how-to-get-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+/* Additional spacing for better separation on smaller devices */
+.container-xxl {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

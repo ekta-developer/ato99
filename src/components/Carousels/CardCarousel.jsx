@@ -11,13 +11,13 @@ import { useNavigate } from "react-router-dom";
 
 const textStyle = {
   fontFamily: "'Arial', sans-serif",
-  fontSize: "18px",
+  fontSize: "16px", // Adjusted for mobile readability
   fontWeight: "400",
-  letterSpacing: "2px",
+  letterSpacing: "1px",
   textTransform: "uppercase",
   color: "#000",
   margin: "0",
-  marginTop: "2px",
+  marginTop: "5px",
   padding: "0",
 };
 
@@ -25,21 +25,22 @@ const ratingContainerStyle = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  gap: "5px", // Space between stars and rating number
+  gap: "5px",
   fontFamily: "'Arial', sans-serif",
-  fontSize: "12px", // Slightly smaller font for the rating number
+  fontSize: "12px",
   color: "#000",
 };
 
 const CardCarousel = () => {
   const [products, setProducts] = useState([]);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
+
   useEffect(() => {
     setProducts(Products); // Load static data from JSON
   }, []);
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -62,8 +63,14 @@ const CardCarousel = () => {
 
   return (
     <>
-      <div className="container" style={{marginTop:"0%", paddingTop:"25px"}}>
-        {/* <hr/> */}
+      <div
+        className="container"
+        style={{
+          marginTop: "0%",
+          paddingTop: "25px",
+          backgroundColor: "#f9f9f9",
+        }}
+      >
         <h1 className="display-5 text-center mb-5">Our Collection</h1>
         <div className="slider-container my-4">
           <Slider {...sliderSettings}>
@@ -73,33 +80,8 @@ const CardCarousel = () => {
                   className="card h-100"
                   style={{ border: "none", boxShadow: "none" }}
                 >
-                  <div
-                    className="card-header bg-transparent text-center"
-                    style={{ border: "none" }}
-                  >
-                    {/* <a
-                    href={`/product-detail/${product.slug}`}
-                    className="text-decoration-none"
-                  >
-                    {product.status && (
-                      <span
-                        className={`badge rounded-pill bg-${
-                          product.status.toLowerCase() === "sale"
-                            ? "danger"
-                            : product.status.toLowerCase() === "new"
-                            ? "success"
-                            : "secondary"
-                        }`}
-                      >
-                        {product.status}
-                      </span>
-                    )}
-                  </a> */}
-                  </div>
-                  <div
-                    className="card-body text-center"
-                    style={{ border: "none" }}
-                  >
+                  {/* Product Images */}
+                  <div className="card-body text-center" style={{ border: "none" }}>
                     <a href={`/product-detail/${product.slug}`}>
                       <div className="d-flex justify-content-center position-relative">
                         {/* Main Image */}
@@ -108,7 +90,7 @@ const CardCarousel = () => {
                           alt={`${product.name} - Main`}
                           className="img-fluid product-image"
                           style={{
-                            maxHeight: "300px", // Increased by 25%
+                            maxHeight: "250px",
                             objectFit: "cover",
                             transition: "opacity 0.3s ease-in-out",
                           }}
@@ -119,7 +101,7 @@ const CardCarousel = () => {
                           alt={`${product.name} - Hover`}
                           className="img-fluid product-image-hover position-absolute"
                           style={{
-                            maxHeight: "300px", // Increased by 25%
+                            maxHeight: "250px",
                             objectFit: "cover",
                             top: 0,
                             left: 0,
@@ -130,29 +112,22 @@ const CardCarousel = () => {
                           onMouseOut={(e) => (e.target.style.opacity = 0)}
                         />
                       </div>
+                      {/* Wishlist Button */}
                       <button
                         className="position-absolute top-0 end-0 p-2 m-2 bg-white border-0 rounded-circle shadow"
-                        // style={{
-                        //   width: "40px",
-                        //   height: "40px",
-
-                        //   display: "flex",
-                        //   alignItems: "center",
-                        //   justifyContent: "center",
-                        // }}
                         onClick={() =>
                           console.log("Add to Wishlist clicked:", product)
                         }
                       >
-                        <CiHeart style={{ fontSize: "30px" }} />
+                        <CiHeart style={{ fontSize: "25px" }} />
                       </button>
                     </a>
 
-                    {/* Rating Section with Stars */}
+                    {/* Product Details */}
                     <div className="ratings-container mb-3">
                       <div className="d-flex justify-content-center">
                         <span>
-                          <p style={textStyle}> {product.name}</p>
+                          <p style={textStyle}>{product.name}</p>
                           <div style={ratingContainerStyle}>
                             <Rating
                               rating={product.averageRating}
@@ -168,7 +143,7 @@ const CardCarousel = () => {
                         <span
                           style={{
                             color: "#ff4d29",
-                            fontSize: "20px",
+                            fontSize: "18px",
                             fontWeight: "700",
                             marginRight: "10px",
                           }}
@@ -177,7 +152,7 @@ const CardCarousel = () => {
                         </span>
                         <span
                           className="text-muted text-decoration-line-through"
-                          style={{ fontSize: "18px", fontWeight: "400" }}
+                          style={{ fontSize: "16px", fontWeight: "400" }}
                         >
                           ₹{product.price}
                         </span>
@@ -185,10 +160,8 @@ const CardCarousel = () => {
                     </div>
                   </div>
 
-                  <div
-                    className="card-footer text-center bg-white"
-                    style={{ border: "none" }}
-                  >
+                  {/* Add to Cart Button */}
+                  <div className="card-footer text-center bg-white" style={{ border: "none" }}>
                     <button
                       className="btn2"
                       onClick={() =>
@@ -203,8 +176,16 @@ const CardCarousel = () => {
             ))}
           </Slider>
         </div>
-        <div className="view-btn">
-          <button className="btn btn-outline-secondary" onClick={()=>{navigate("/product")}}>View All</button>
+        {/* View All Button */}
+        <div className="text-center mt-8 mb-5">
+          <button
+            className="btn btn-outline-secondary"
+            onClick={() => {
+              navigate("/product");
+            }}
+          >
+            View All
+          </button>
         </div>
       </div>
     </>

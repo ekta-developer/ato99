@@ -2,27 +2,51 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import "./style.css"
 const CarouselPart = () => {
-  const sliderRef = useRef(null); // Reference to control the slider
+  const sliderRef = useRef(null);
 
   const settings = {
-    dots: true, // Show navigation dots
-    infinite: true, // Loop through slides
-    speed: 500, // Transition speed
-    slidesToShow: 1, // Show one slide at a time
-    slidesToScroll: 1, // Scroll one slide at a time
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // 3 seconds interval
-    arrows: false, // Disable default arrows, we'll use custom controls
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768, // For tablets and below
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplaySpeed: 4000, // Adjust autoplay speed for smaller screens
+        },
+      },
+      {
+        breakpoint: 480, // For mobile devices
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false, // Disable autoplay for smaller screens
+        },
+      },
+    ],
   };
 
   const container = {
     marginTop: "18.5rem",
   };
+
   const carousel = {
     marginTop: "0%",
   };
+
+  const responsiveTextStyle = {
+    fontSize: "1.2rem",
+  };
+
   return (
     <div className="carousel-container" style={carousel}>
       <Slider {...settings} ref={sliderRef}>
@@ -31,7 +55,10 @@ const CarouselPart = () => {
           <div className="container" style={container}>
             <div className="row">
               <div className="col-12 text-center text-white">
-                <h6 className="text-white text-uppercase">
+                <h6
+                  className="text-white text-uppercase"
+                  style={responsiveTextStyle}
+                >
                   Discover your new favorite outfit.
                 </h6>
                 <h1 className="display-3 my-4">
@@ -54,8 +81,11 @@ const CarouselPart = () => {
         <div className="slide slide2">
           <div className="container" style={container}>
             <div className="row">
-              <div className="col-12 col-lg-10 offset-lg-1 text-white">
-                <h6 className="text-white text-uppercase">
+              <div className="col-12 col-lg-10 offset-lg-1 text-center text-white">
+                <h6
+                  className="text-white text-uppercase"
+                  style={responsiveTextStyle}
+                >
                   Dress for the life you deserve.
                 </h6>
                 <h1 className="display-3 my-4">
@@ -78,18 +108,16 @@ const CarouselPart = () => {
       <button
         className="carousel-control-prev"
         type="button"
-        onClick={() => sliderRef.current.slickPrev()} // Navigate to previous slide
+        onClick={() => sliderRef.current.slickPrev()}
       >
-        {/* <span className="carousel-control-prev-icon" aria-hidden="true"></span> */}
-        {/* <span className="sr-only">Previous</span> */}
+        {/* Custom Previous Button */}
       </button>
       <button
         className="carousel-control-next"
         type="button"
-        onClick={() => sliderRef.current.slickNext()} // Navigate to next slide
+        onClick={() => sliderRef.current.slickNext()}
       >
-        {/* <span className="carousel-control-next-icon" aria-hidden="true"></span> */}
-        {/* <span className="sr-only">Next</span> */}
+        {/* Custom Next Button */}
       </button>
     </div>
   );

@@ -16,13 +16,13 @@
   color: #fff; /* White text */
 }
 
-.btn-view{
-justify-content: center;
-align-content: center;
+.btn-view {
+  justify-content: center;
+  align-content: center;
 }
 
-.btn-view:hover{
-  background-color:black; /* Light orange background */
+.btn-view:hover {
+  background-color: black; /* Light orange background */
   color: #fff; /* White text */
 }
 .view-btn {
@@ -32,3 +32,45 @@ align-content: center;
 .btn-view {
   display: inline-block; /* Ensures button respects text alignment */
 }
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+/* 
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 2rem; /* Adjust headline size for tablets */
+  /* } */
+
+  /* .btn {
+    padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
+  /* } */
+/* }
+
+@media (max-width: 480px) {
+  .display-3 {
+    font-size: 1.5rem; /* Smaller headline for mobile */
+  /* }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  .btn { */
+    /* width: 100%; /* Make buttons stack for smaller devices */
+    /* margin-bottom: 0.5rem;
+  } */
+
+  /* .ms-3 {
+    margin-left: 0 !important; */
+  /* } */
+/* } */ 
