@@ -7,6 +7,7 @@ import Products from "../../assests/StaticData/products.json";
 import Rating from "../Rating/Rating";
 import { CiHeart } from "react-icons/ci";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const textStyle = {
   fontFamily: "'Arial', sans-serif",
@@ -32,7 +33,7 @@ const ratingContainerStyle = {
 
 const CardCarousel = () => {
   const [products, setProducts] = useState([]);
-
+  const navigate=useNavigate();
   useEffect(() => {
     setProducts(Products); // Load static data from JSON
   }, []);
@@ -61,7 +62,7 @@ const CardCarousel = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container" style={{marginTop:"0%", paddingTop:"25px"}}>
         {/* <hr/> */}
         <h1 className="display-5 text-center mb-5">Our Collection</h1>
         <div className="slider-container my-4">
@@ -203,7 +204,7 @@ const CardCarousel = () => {
           </Slider>
         </div>
         <div className="view-btn">
-          <button className="btn btn-outline-secondary">View All</button>
+          <button className="btn btn-outline-secondary" onClick={()=>{navigate("/product")}}>View All</button>
         </div>
       </div>
     </>

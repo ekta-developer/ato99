@@ -7,7 +7,7 @@ const About = () => {
       {/* <!-- ABOUT --> */}
       <section id="about">
         {/* <!-- About Start --> */}
-        <div className="container-xxl py-2">
+        <div className="container py-2">
           <div className="container">
             <div className="row g-5 align-items-end">
               <div

@@ -21,7 +21,7 @@ const CarouselPart = () => {
     marginTop: "18.5rem",
   };
   const carousel = {
-    marginTop: "6%",
+    marginTop: "0%",
   };
   return (
     <div className="carousel-container" style={carousel}>
