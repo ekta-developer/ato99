@@ -66,8 +66,6 @@ const CardCarousel = () => {
       <div
         className="container"
         style={{
-          marginTop: "0%",
-          paddingTop: "25px",
           backgroundColor: "#f9f9f9",
         }}
       >

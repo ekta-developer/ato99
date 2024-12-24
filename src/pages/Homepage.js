@@ -10,17 +10,17 @@ import "../assests/CSS/css/style.css";
 const Homepage = () => {
   return (
     <>
-      <section id="home" style={{ height: "100vh" }}>
+      <section id="home">
         <Header />
         <CarouselPart />
       </section>
-      <section id="about" style={{ height: "100vh" }}>
+      <section id="about">
         <About />
       </section>
-      <section id="product" style={{ height: "100vh" }}>
+      <section id="product">
         <CardCarousel />
       </section>
-      <section id="contact" style={{ height: "100vh" }}>
+      <section id="contact">
         <Contact2 />
       </section>
       <WhatsApp />

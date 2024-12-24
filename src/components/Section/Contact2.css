@@ -9,10 +9,10 @@
 /* Custom styles for Contact2 */
 
 /* Adjust spacing and layout for smaller screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .phones-list p,
   .work-schedule p {
-    font-size: 14px; /* Smaller font for compact display */
+    font-size: 14px; 
     line-height: 1.5;
   }
 
@@ -20,10 +20,10 @@
     font-size: 14px;
     padding: 8px 12px;
   }
-}
+} */
 
 /* Additional spacing for better separation on smaller devices */
-.container-xxl {
+/* .container-xxl {
   padding-top: 50px;
   padding-bottom: 50px;
-}
+} */
