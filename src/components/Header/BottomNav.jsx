@@ -11,9 +11,9 @@ const BottomNav = () => {
     >
       <div className="container">
         <a className="navbar-brand" href="">
-          <img
+          <img 
             src={img}
-            style={{ width: "20px", height: "20px" }}
+            style={{ width: "50px", height: "50px",hover:"transform-scale" }}
             alt="Brand"
           ></img>
         </a>
