@@ -54,7 +54,7 @@ const CarouselPart = () => {
         <div className="slide slide1">
           <div className="container" style={container}>
             <div className="row">
-              <div className="col-12 text-center text-white">
+              <div id="content" className="col-12 text-center text-white p-20">
                 <h6
                   className="text-white text-uppercase"
                   style={responsiveTextStyle}
@@ -81,7 +81,7 @@ const CarouselPart = () => {
         <div className="slide slide2">
           <div className="container" style={container}>
             <div className="row">
-              <div className="col-12 col-lg-10 offset-lg-1 text-center text-white">
+              <div id="content" className="col-12 col-lg-10 offset-lg-1 text-center text-white p-20">
                 <h6
                   className="text-white text-uppercase"
                   style={responsiveTextStyle}

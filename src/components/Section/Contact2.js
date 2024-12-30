@@ -5,7 +5,7 @@ import Card from "../Cards/Card";
 
 function Contact2() {
   return (
-    <div className="container-xxl py-5" style={{ marginTop: "100px" }}>
+    <div className="container-xxl py-5">
       <div className="container">
         <h1 className="display-5 mb-4 text-center">Contact Us</h1>
         <div className="row g-4">

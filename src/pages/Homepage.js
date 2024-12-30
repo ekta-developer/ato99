@@ -14,15 +14,15 @@ const Homepage = () => {
         <Header />
         <CarouselPart />
       </section>
-      <section id="about">
+      <div id="about">
         <About />
-      </section>
-      <section id="product">
+      </div>
+      <div id="product">
         <CardCarousel />
-      </section>
-      <section id="contact">
+      </div>
+      <div id="contact">
         <Contact2 />
-      </section>
+      </div>
       <WhatsApp />
       <Footer />
     </>

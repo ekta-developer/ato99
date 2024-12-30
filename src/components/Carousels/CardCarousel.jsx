@@ -69,7 +69,7 @@ const CardCarousel = () => {
           backgroundColor: "#f9f9f9",
         }}
       >
-        <h1 className="display-5 text-center mb-5">Our Collection</h1>
+        <h1 className="display-5 text-center p-3">Our Collection</h1>
         <div className="slider-container my-4">
           <Slider {...sliderSettings}>
             {products.map((product) => (
@@ -175,7 +175,7 @@ const CardCarousel = () => {
           </Slider>
         </div>
         {/* View All Button */}
-        <div className="text-center mt-8 mb-5">
+        <div className="text-center p-3 ">
           <button
             className="btn btn-outline-secondary"
             onClick={() => {
