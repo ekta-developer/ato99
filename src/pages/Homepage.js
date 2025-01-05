@@ -7,6 +7,7 @@ import Contact2 from "../components/Section/Contact2";
 import WhatsApp from "../components/Social Connect/WhatsApp";
 import Footer from "../components/Footer/Footer";
 import "../assests/CSS/css/style.css";
+import PinterestLayout from "../components/layout/PinterestLayout";
 const Homepage = () => {
   return (
     <>
@@ -18,7 +19,9 @@ const Homepage = () => {
         <About />
       </div>
       <div id="product">
-        <CardCarousel />
+        {/* removed it on 05-01-2025 */}
+        {/* <CardCarousel /> */}
+        <PinterestLayout cardsData/>
       </div>
       <div id="contact">
         <Contact2 />

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact2.css"; // Ensure this file contains responsive styles
 import "../../assests/CSS/css/bootstrap.min.css";
+import img from "../../assests/QRwhatsapp.jpg (2).jpeg"
 import Card from "../Cards/Card";
 
 function Contact2() {
@@ -43,20 +44,15 @@ function Contact2() {
           {/* Work Schedule Card */}
           <div className="col-md-4 col-sm-12">
             <Card
-              mainHeading="Work Schedule"
+              mainHeading="Join Us"
               subHeading=""
               content={
                 <div className="work-schedule">
-                  <p>
-                    mon-sun: <br /> <span>10:00 — 22:00</span>
-                  </p>
-                  <p>
-                    mon-sun: <br />
-                    <span>10:00 — 22:00</span>
-                  </p>
-                  <p>
-                    mon-fri: <br /> <span>10:00 — 22:00</span>
-                  </p>
+                  <img
+                    src={img}
+                    alt="Work Schedule"
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </div>
               }
             />

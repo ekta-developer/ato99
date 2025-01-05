@@ -26,11 +26,19 @@ const TopNav = () => {
               {/* Contact Information */}
               <div className="d-flex align-items-center flex-wrap">
                 <p className="mb-0 me-3">
-                  <i className="bx bxs-envelope"></i> info@example.com
+                  <i className="bx bxs-envelope"></i>
+                  <a
+                    style={{ color: "white" }}
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    info@example.com
+                  </a>
                 </p>
-                <p className="mb-0">
+                {/* <p className="mb-0">
                   <i className="bx bxs-phone-call"></i> 123 456-7890
-                </p>
+                </p> */}
               </div>
 
               {/* Social Icons */}
@@ -38,16 +46,36 @@ const TopNav = () => {
                 className="social-icons d-flex align-items-center flex-wrap"
                 style={{ paddingRight: "100px" }}
               >
-                <a href="#" className=" mb-0 me-3">
+                <a
+                  href="https://www.facebook.com/"
+                  className="mb-0 me-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="bx bxl-facebook"></i>
                 </a>
-                <a href="#" className=" mb-0 me-3">
+                <a
+                  href="https://www.twitter.com/"
+                  className="mb-0 me-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="bx bxl-twitter"></i>
                 </a>
-                <a href="#" className=" mb-0 me-3">
+                <a
+                  href="https://www.instagram.com/"
+                  className="mb-0 me-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="bx bxl-instagram"></i>
                 </a>
-                <a href="#" className=" mb-0 me-3">
+                <a
+                  href="https://www.pinterest.com/"
+                  className="mb-0 me-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="bx bxl-pinterest"></i>
                 </a>
               </div>

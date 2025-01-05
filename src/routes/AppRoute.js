@@ -13,7 +13,8 @@ const AppRoute = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/product" element={<Products />} />
+        {/* Removed it on 05-01-2025 */}
+        {/* <Route path="/product" element={<Products />} /> */}
       </Routes>
     </BrowserRouter>
   );

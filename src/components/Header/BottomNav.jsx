@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assests/CSS/css/bootstrap.min.css";
-import img from "../../assests/logo.png";
+import img from "../../assests/IMAGES/img/unnamed.png";
 import { useNavigate } from "react-router-dom";
 const BottomNav = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const BottomNav = () => {
         <a className="navbar-brand" href="">
           <img
             src={img}
-            style={{ width: "20px", height: "20px" }}
+            style={{ width: "127px", height: "70px" }}
             alt="Brand"
           ></img>
         </a>
@@ -47,7 +47,7 @@ const BottomNav = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#product">
-                Product
+                Collection
               </a>
             </li>
             {/* <li className="nav-item">
