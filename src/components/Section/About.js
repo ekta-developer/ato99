@@ -7,7 +7,7 @@ const About = () => {
     <>
       {/* ABOUT Section */}
       {/* <section id="about"> */}
-      <div className="container-fluid py-4">
+      <div className="container-fluid py-4" style={{marginBottom:"40px"}}>
         <div className="container">
           <div className="row g-5 align-items-center">
             {/* Image Section */}

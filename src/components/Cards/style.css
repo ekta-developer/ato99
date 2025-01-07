@@ -1,0 +1,66 @@
+.image {
+    margin: 15px 10px;
+    padding: 0;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+    height: 200px; /* Default height */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image.xs {
+    grid-row-end: span 15;
+    height: 150px;
+  }
+  
+  .image.small {
+    grid-row-end: span 28;
+    height: 200px;
+  }
+  
+  .image.medium {
+    grid-row-end: span 33;
+    height: 250px;
+  }
+  
+  .image.large {
+    grid-row-end: span 39;
+    height: 300px;
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+    filter: blur(3px);
+  }
+  
+  .image:hover .button-container {
+    opacity: 1;
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .button-container button {
+    background-color: #ff4b5c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button-container button:hover {
+    background-color: #e63b4b;
+  }
+  

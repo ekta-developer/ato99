@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact2.css"; // Ensure this file contains responsive styles
 import "../../assests/CSS/css/bootstrap.min.css";
-import img from "../../assests/QRwhatsapp.jpg (2).jpeg"
+import img from "../../assests/WhatsApp Image 2025-01-07 at 9.40.19 PM.jpeg";
 import Card from "../Cards/Card";
 
 function Contact2() {
@@ -51,7 +51,11 @@ function Contact2() {
                   <img
                     src={img}
                     alt="Work Schedule"
-                    style={{ width: "100%", height: "auto" }}
+                    style={{
+                      width: "89%",
+                      height: "160px",
+                      paddingleft: "20px",
+                    }}
                   />
                 </div>
               }

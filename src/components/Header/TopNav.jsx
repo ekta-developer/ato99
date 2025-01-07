@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../assests/CSS/css/bootstrap.min.css";
+
 const TopNav = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -14,6 +15,7 @@ const TopNav = () => {
     paddingLeft:
       windowWidth > 768 ? "100px" : windowWidth > 480 ? "50px" : "20px",
   };
+
   return (
     <>
       <div className="top-nav" id="home">
@@ -36,9 +38,6 @@ const TopNav = () => {
                     info@example.com
                   </a>
                 </p>
-                {/* <p className="mb-0">
-                  <i className="bx bxs-phone-call"></i> 123 456-7890
-                </p> */}
               </div>
 
               {/* Social Icons */}
@@ -47,7 +46,7 @@ const TopNav = () => {
                 style={{ paddingRight: "100px" }}
               >
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/share/1GS1jgQUBJ/"
                   className="mb-0 me-3"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -55,15 +54,7 @@ const TopNav = () => {
                   <i className="bx bxl-facebook"></i>
                 </a>
                 <a
-                  href="https://www.twitter.com/"
-                  className="mb-0 me-3"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bx bxl-twitter"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/ta99store.com_/profilecard/?igsh=MTkxZW04cjVjbW9ubQ=="
                   className="mb-0 me-3"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -71,12 +62,12 @@ const TopNav = () => {
                   <i className="bx bxl-instagram"></i>
                 </a>
                 <a
-                  href="https://www.pinterest.com/"
+                  href="https://whatsapp.com/channel/0029Vaxm71pL2AU6Ccm8yO0e"
                   className="mb-0 me-3"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="bx bxl-pinterest"></i>
+                  <i className="bx bxl-whatsapp"></i>
                 </a>
               </div>
             </div>

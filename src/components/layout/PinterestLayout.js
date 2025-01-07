@@ -1,9 +1,9 @@
 import React from "react";
 import Pinterestcards from "../Cards/Pinterestcards";
-import img1 from "../../assests/IMAGES/images/item-cart-01.jpg";
-import img2 from "../../assests/IMAGES/images/item-cart-02.jpg";
-import img3 from "../../assests/IMAGES/images/item-cart-03.jpg";
-import img4 from "../../assests/IMAGES/images/item-cart-04.jpg";
+import img1 from "../../assests/IMAGES/images/gallery-01.jpg";
+import img2 from "../../assests/IMAGES/images/gallery-02.jpg";
+import img3 from "../../assests/IMAGES/images/gallery-03.jpg";
+import img4 from "../../assests/IMAGES/images/gallery-04.jpg";
 
 const PinterestLayout = () => {
   return (
@@ -16,19 +16,14 @@ const PinterestLayout = () => {
       >
         <h1 className="display-5 text-center p-3">Our Collection</h1>
         <div style={styles.pin_container}>
-            {/* <Row> */}
-          <Pinterestcards size="small" />
-          <Pinterestcards size="medium"/>
-          <Pinterestcards size="large" />
-          <Pinterestcards size="small" />
-          {/* </Row>
-          <Row> */}
-          <Pinterestcards size="large" />
-          <Pinterestcards size="large" />
-          {/* <Pinterestcards size="xs"/> */}
-          <Pinterestcards size="medium" />
-          <Pinterestcards size="small" />
-          {/* </Row> */}
+          <Pinterestcards size="small" image={img1} />
+          <Pinterestcards size="medium" image={img2} />
+          <Pinterestcards size="large" image={img3} />
+          <Pinterestcards size="small" image={img4} />
+          <Pinterestcards size="large" image={img1} />
+          <Pinterestcards size="large" image={img2} />
+          <Pinterestcards size="medium" image={img3} />
+          <Pinterestcards size="small" image={img4} />
         </div>
       </div>
     </>
