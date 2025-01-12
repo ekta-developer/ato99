@@ -1,29 +1,28 @@
 import React from "react";
 import Pinterestcards from "../Cards/Pinterestcards";
-import img1 from "../../assests/IMAGES/images/gallery-01.jpg";
-import img2 from "../../assests/IMAGES/images/gallery-02.jpg";
-import img3 from "../../assests/IMAGES/images/gallery-03.jpg";
-import img4 from "../../assests/IMAGES/images/gallery-04.jpg";
-
+import img1 from "../../assests/IMAGES/gridImages/brunette-woman-red-suit-with-evening-makeup-white.png";
+import img2 from "../../assests/IMAGES/gridImages/portrait-young-woman-2000s-fashion-style.png"
+import img3 from "../../assests/IMAGES/gridImages/skater-girl-hiding-her-face-from-sun-with-her-head.png";
 const PinterestLayout = () => {
   return (
     <>
       <div
-        className="container"
+        className="container-fluid"
         style={{
           backgroundColor: "#f9f9f9",
+          paddingBottom:"28px"
         }}
       >
         <h1 className="display-5 text-center p-3">Our Collection</h1>
         <div style={styles.pin_container}>
           <Pinterestcards size="small" image={img1} />
-          <Pinterestcards size="medium" image={img2} />
-          <Pinterestcards size="large" image={img3} />
-          <Pinterestcards size="small" image={img4} />
-          <Pinterestcards size="large" image={img1} />
+          <Pinterestcards size="medium" image={img3} />
+          <Pinterestcards size="large" image={img2} />
+          <Pinterestcards size="small" image={img1} />
+          <Pinterestcards size="large" image={img2} />
           <Pinterestcards size="large" image={img2} />
           <Pinterestcards size="medium" image={img3} />
-          <Pinterestcards size="small" image={img4} />
+          <Pinterestcards size="small" image={img1} />
         </div>
       </div>
     </>

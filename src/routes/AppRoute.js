@@ -6,7 +6,6 @@ import {
     BrowserRouter,
     Routes,
   } from "react-router-dom";import Homepage from "../pages/Homepage";
-import Products from "../pages/Products";
 
 const AppRoute = () => {
   return (

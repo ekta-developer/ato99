@@ -3,7 +3,7 @@ import img from "../../assests/IMAGES/img/unnamed.png";
 const Footer = () => {
   return (
     <>
-      <footer id="footer" className="footer position-relative light-background">
+      <footer id="footer" className="footer position-relative" style={{backgroundColor:"#9E9E9E"}}>
         <div className="container footer-top d-flex justify-content-center">
           <div className="align-content-center">
             <img
@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="container footer-top d-flex justify-content-center">
+        <div className="container footer-top d-flex justify-content-center text-dark">
           <div className="align-content-center text-center">
             <p>
               At TA99store.com, we believe fashion is more than clothing – it’s
@@ -41,10 +41,10 @@ const Footer = () => {
 
         <div className="container copyright text-center mt-4">
           <p>
-            © <span>Copyright</span> <strong className="sitename">App</strong>{" "}
-            <span>All Rights Reserved</span>
+            © <span className="text-dark">Copyright</span> <strong className="sitename text-dark">App</strong>{" "}
+            <span  className="text-dark">All Rights Reserved</span>
           </p>
-          <div className="credits">
+          <div className="credits text-dark">
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
           </div>
         </div>

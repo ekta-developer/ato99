@@ -11,6 +11,7 @@ const TopNav = () => {
   }, []);
 
   const containerStyle = {
+    backgroundColor:"#141414",
     display: "flex",
     paddingLeft:
       windowWidth > 768 ? "100px" : windowWidth > 480 ? "50px" : "20px",

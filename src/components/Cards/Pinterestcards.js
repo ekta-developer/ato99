@@ -10,9 +10,9 @@ const Pinterestcards = ({ size, image }) => {
         paddingBottom: "20px"
       }}
     >
-      <div className="button-container">
+      {/* <div className="button-container">
         <button>View Details</button>
-      </div>
+      </div> */}
     </div>
   );
 };
