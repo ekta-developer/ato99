@@ -32,11 +32,11 @@ const TopNav = () => {
                   <i className="bx bxs-envelope"></i>
                   <a
                     style={{ color: "white" }}
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@example.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=ta99shop@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    info@example.com
+                    ta99shop@gmail.com
                   </a>
                 </p>
               </div>

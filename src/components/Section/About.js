@@ -7,7 +7,7 @@ const About = () => {
     <>
       {/* ABOUT Section */}
       {/* <section id="about"> */}
-      <div className="container-fluid py-4" style={{marginBottom:"40px"}}>
+      <div className="container-fluid py-4" style={{ marginBottom: "40px" }}>
         <div className="container">
           <div className="row g-5 align-items-center">
             {/* Image Section */}
@@ -28,17 +28,18 @@ const About = () => {
               className="col-lg-6 col-md-7 col-sm-12 wow fadeInUp text-center text-md-start"
               data-wow-delay="0.3s"
             >
-              <h1 className="display-5 mb-2">
-                We Make Your Home Like A Garden
-              </h1>
+              <h1 className="display-5 mb-2">Why Choose TA99 store?</h1>
               <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo magna dolore erat amet.
+                Welcome to TA99 store, in which fashion meets comfort! We are an
+                modern on-line fashion platform devoted to bringing the
+                modern-day traits and terrific garb immediately to the doorstep.
+                Our mission is easy: to offer you a extensive variety of
+                style-forward and versatile garb at fees that don’t cost a
+                fortune.
               </p>
-              <a className="btn btn-brand py-3 px-4 me-2" href="#">
+              {/* <a className="btn btn-brand py-3 px-4 me-2" href="#">
                 Explore More
-              </a>
+              </a> */}
             </div>
 
             {/* Features Section */}
@@ -50,20 +51,21 @@ const About = () => {
                 <div className="col-12">
                   <div className="border-start ps-4">
                     <i className="fa fa-award fa-3x text-primary mb-3"></i>
-                    <h4 className="mb-3">Award Winning</h4>
+                    <h4 className="mb-3">Seamless Shopping Experience</h4>
                     <span>
-                      Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                      duo justo magna.
+                      With an clean-to-navigate website and speedy, reliable
+                      delivery, purchasing with us is handy.
                     </span>
                   </div>
                 </div>
                 <div className="col-12">
                   <div className="border-start ps-4">
                     <i className="fa fa-users fa-3x text-primary mb-3"></i>
-                    <h4 className="mb-3">Dedicated Team</h4>
+                    <h4 className="mb-3">Customer-Centric Approach:</h4>
                     <span>
-                      Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                      duo justo magna.
+                      Your pleasure is our priority. From easy navigation to
+                      rapid delivery, we make certain a continuing shopping
+                      experience.
                     </span>
                   </div>
                 </div>

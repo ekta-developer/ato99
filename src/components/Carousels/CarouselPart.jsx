@@ -66,12 +66,12 @@ const CarouselPart = () => {
                   <br />
                   experiences
                 </h1>
-                <a href="#" className="btn btn-brand">
+                {/* <a href="#" className="btn btn-brand">
                   Get Started
                 </a>
                 <a href="#" className="btn btn-outline-light ms-3">
                   Our work
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -92,12 +92,12 @@ const CarouselPart = () => {
                   Design Driven For <br />
                   Professionals
                 </h1>
-                <a href="#" className="btn btn-brand">
+                {/* <a href="#" className="btn btn-brand">
                   Get Started
                 </a>
                 <a href="#" className="btn btn-outline-light ms-3">
                   Our work
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

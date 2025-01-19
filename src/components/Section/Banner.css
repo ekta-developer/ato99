@@ -1,0 +1,41 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: #e4e4e4;
+}
+.text-content {
+    padding: 4%;
+    max-width: 50%;
+}
+.text-content h1 {
+    font-size: 2em;
+    color: #333;
+}
+.text-content p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #666;
+}
+.text-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background: #007bff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.text-content button:hover {
+    background: #0056b3;
+}
+.tshirt-image {
+    width: 45%;
+    position: relative;
+}
+.tshirt-image img {
+    width: 100%;
+    object-fit: contain;
+}

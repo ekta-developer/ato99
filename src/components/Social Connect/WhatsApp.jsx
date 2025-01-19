@@ -5,7 +5,7 @@ const WhatsApp = () => {
   return (
     <div className="whatsapp-icon">
       <a
-        href="https://wa.me/6388345484"
+        href="https://whatsapp.com/channel/0029Vaxm71pL2AU6Ccm8yO0e"
         target="_blank"
         rel="noopener noreferrer"
       >

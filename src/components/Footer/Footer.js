@@ -44,9 +44,9 @@ const Footer = () => {
             © <span className="text-dark">Copyright</span> <strong className="sitename text-dark">App</strong>{" "}
             <span  className="text-dark">All Rights Reserved</span>
           </p>
-          <div className="credits text-dark">
+          {/* <div className="credits text-dark">
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>

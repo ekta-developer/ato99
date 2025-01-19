@@ -8,6 +8,8 @@ import WhatsApp from "../components/Social Connect/WhatsApp";
 import Footer from "../components/Footer/Footer";
 import "../assests/CSS/css/style.css";
 import PinterestLayout from "../components/layout/PinterestLayout";
+import ContactCard from "../components/Cards/ContactCard";
+import Banner from "../components/Section/Banner";
 const Homepage = () => {
   return (
     <>
@@ -18,13 +20,17 @@ const Homepage = () => {
       <div id="about">
         <About />
       </div>
+      <div>
+      <Banner />
+      </div>
       <div id="product">
         {/* removed it on 05-01-2025 */}
         {/* <CardCarousel /> */}
-        <PinterestLayout cardsData/>
+        <PinterestLayout cardsData />
       </div>
       <div id="contact">
-        <Contact2 />
+        {/* <Contact2 /> */}
+        <ContactCard />
       </div>
       <WhatsApp />
       <Footer />
