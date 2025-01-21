@@ -11,17 +11,17 @@ const ProductCardSkeleton = () => {
       />
       {/* Product Image */}
       <div style={{ marginBottom: "10px", textAlign: "center" }}>
-        <Skeleton height={170} width={150} />
+        <Skeleton height={200} width={150} />
       </div>
 
       {/* Product Title */}
       <div style={{ marginBottom: "8px" }}>
         <Skeleton width="100%" height={20} />
-        <Skeleton width="70%" height={20} />
+        <Skeleton width="100%" height={20} />
       </div>
 
       {/* Offer Details */}
-      <div style={{ marginBottom: "10px" }}>
+      <div style={{ marginBottom: "10px", textAlign: "start" }}>
         <Skeleton width={100} height={15} />
       </div>
 
@@ -29,26 +29,37 @@ const ProductCardSkeleton = () => {
       <div
         style={{
           display: "flex",
+          justifyContent: "space-between",
           alignItems: "center",
           gap: "5px",
           marginBottom: "10px",
         }}
       >
-        <Skeleton circle={true} height={20} width={20} />
-        <Skeleton width={60} height={15} />
+        <div style={{ display: "flex", gap: "5px", marginBottom: "10px" }}>
+          {Array(5)
+            .fill(null)
+            .map((_, index) => (
+              <Skeleton key={index} circle={true} height={20} width={20} />
+            ))}
+        </div>
+        <div style={{ marginBottom: "10px", textAlign: "start" }}>
+          <Skeleton width={65} height={20} style={{ textAlign: "right" }} />
+        </div>{" "}
       </div>
 
       {/* Pricing */}
       <div
         style={{
           display: "flex",
+          justifyContent:"space-between",
           alignItems: "center",
           gap: "10px",
-          marginBottom: "10px",
         }}
       >
-        <Skeleton width={40} height={15} />
-        <Skeleton width={50} height={20} />
+        <div style={{ marginBottom: "10px", textAlign: "start" }}>
+          <Skeleton width={100} height={15} />
+        </div>{" "}
+        <Skeleton width={65} height={20} />
       </div>
 
       {/* Add to Cart Button */}
